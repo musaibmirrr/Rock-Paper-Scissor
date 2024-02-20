@@ -1,0 +1,138 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: open sans, sans-serif;
+    box-sizing: border-box;
+}
+
+section {
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3a86ff;
+
+}
+
+.box {
+    border: 10px solid #0d1b2a;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.screen {
+    background-color: #f1faee;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.reset {
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #3a86ff;
+    font-weight: bolder;
+
+}
+
+.reset button {
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f1faee;
+    color: black;
+    padding: 5px 5px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #f1faee;
+    color: #3a86ff;
+    transition: background-color 0.2s ease-in-out;
+    border: none;
+}
+
+span:hover {
+    color: #f1faee;
+    transition: color 0.2s ease-in-out;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+@media (max-width:600px) {
+    .reset {
+
+        font-size: small;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .reset :nth-child(1) {
+        display: none;
+    }
+
+
+}
+
+@media (max-width:361px) {
+    .box img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .box {
+        width: 50px;
+        height: 50px;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    .screen{
+        text-align: center;
+    }
+
+   
+}
+
+@media (max-width:313px){
+    .reset :nth-child(2){
+        display: none;
+    }
+    .reset :nth-child(3){
+        display: none;
+    }
+
+    .screen{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .reset{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
