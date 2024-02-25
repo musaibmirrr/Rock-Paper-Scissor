@@ -22,4 +22,3 @@ JavaScript: Programming language for implementing game logic and DOM manipulatio
 
 Credits:
 This project was created by Musiab Mir.
-Inspiration and guidance were taken from Colt Steele #Udemy instructor.
